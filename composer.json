@@ -1,0 +1,9 @@
+{
+    "config": {
+        "vendor-dir": "core/vendor"
+    },
+	"require": {
+        "maer/router": "dev-master",
+        "twig/twig": "~2.0"
+    }
+}
