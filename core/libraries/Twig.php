@@ -1,7 +1,5 @@
 <?php
 namespace Core\libraries;
-// use Twig\Twig_Loader_Filesystem;
-// use Twig\Twig_Environment;
 class Twig {
 
     public $twig;

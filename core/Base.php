@@ -1,8 +1,4 @@
 <?php
-/**
- * @author zhangenrui
- * @desc 框架抽象基类, 可直接继承使用
- */
 
 namespace Core;
 
