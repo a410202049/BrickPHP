@@ -6,24 +6,21 @@
  * Time: 19:58
  */
 
-// if (!function_exists('dumper')) {
-//     function dumper($var, $echo = true) {
-//         ob_start();
-//         var_dump($var);
-//         $output = ob_get_clean();
-//         $output = preg_replace('/\]\=\>\n(\s+)/m', '] => ', $output);
-//         if ('cli' == PHP_SAPI) {
-//             $output = PHP_EOL . $output . PHP_EOL;
-//         } else {
-//             $output = '<pre style="margin:10px;padding:30px;font-size: 16px;background: #f2f2f2;border-radius:10px 10px;overflow: auto">' . htmlspecialchars($output, ENT_QUOTES) . '</pre>';
-//         }
-//         if (!$echo) {
-//             return $output;
-//         }
-//         echo $output;
-//         return null;
-//     }
-// }
+
+/**
+ * 返回完整url路径
+ * @param string $url 变量
+ * @return string|null
+ */
+if (!function_exists('base_url')) {
+    function base_url($url){
+        $url_str = '/';
+        if(!empty($url)){
+           $url_str = $_SERVER['HTTP_HOST'].'/'.$url;
+        }
+        return $url_str;
+    }
+}
 
 /**
  * 改进后的变量输出
@@ -38,9 +35,6 @@ if (!function_exists('dumper')) {
 		echo "</pre>";
 	}
 }
-
-
-
 
 /**
  * session操作快捷函数
@@ -65,6 +59,20 @@ if (!function_exists('session')) {
             $_SESSION[$name] = base64_encode(serialize($value));
         }
         return null;
+    }
+}
+
+if (!function_exists('set_flashdata')) {
+    function set_flashdata($data, $value = NULL){
+        session($data, $value);
+    }
+}
+
+if (!function_exists('get_flashdata')) {
+    function get_flashdata($key){
+        $value = session($key);
+        session($key,null);
+        return $value;
     }
 }
 

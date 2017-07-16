@@ -7,6 +7,8 @@
 $router->get('/', ['app\Controller\Home\IndexController', 'index']);
 $router->post('/show', ['app\Controller\Home\IndexController', 'showUser']);
 
+$router->get('/admin/login', ['app\Controller\Home\LoginController', 'index']);
+
 $router->notFound(function() {
     echo "Ops! The page was not found!";
 });

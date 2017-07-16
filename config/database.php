@@ -1,12 +1,10 @@
 <?php
 return [
     'mysql' => [
-        'dsn'      => 'mysql:host=localhost;dbname=test',
+        'host'      => '127.0.0.1',
         'username'  => 'root',
-        'password'  => '123456mh',
-        'charset'   => 'utf8',
-        'collation' => 'utf8_general_ci',
-        'prefix'    => ''
+        'password'  => 'root',
+        'dbname' => 'mooc'
     ],
 
 ];
