@@ -1,0 +1,4 @@
+2017-07-15 11:36:53|INFO|request_id=5969fe559093b|uri=/?XDEBUG_SESSION_START=12993|method=get|params={"XDEBUG_SESSION_START":"12993"}|stream=|cookie={"PHPSESSID":"j75ndg6gp3ibeclambp7uc02o0","XDEBUG_SESSION":"12993"}|ip=127.0.0.1
+2017-07-15 11:36:56|INFO|request_id=5969fe559093b|run_type=web|run_time=2,754ms|run_memory=0kb|response=|response_type=
+2017-07-15 11:51:22|INFO|request_id=596a01117c524|uri=/?XDEBUG_SESSION_START=17619|method=get|params={"XDEBUG_SESSION_START":"17619"}|stream=|cookie={"PHPSESSID":"j75ndg6gp3ibeclambp7uc02o0","XDEBUG_SESSION":"12317"}|ip=127.0.0.1
+2017-07-15 11:51:23|INFO|request_id=596a01117c524|run_type=web|run_time=20,646ms|run_memory=0kb|response=|response_type=
