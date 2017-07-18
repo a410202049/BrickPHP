@@ -1,7 +1,7 @@
 <?php
 
 namespace Core;
-use Maer\Router\Router;
+use Core\libraries\srouter\SRouter;
 class Framework {
     private static $_startTime = 0;
     private static $_memoryStart = 0;
@@ -12,16 +12,10 @@ class Framework {
         // 自动加载设置
         spl_autoload_register('self::loadClass');
         ini_set('date.timezone', Config::get('app.timezone'));
-        $router = new Router();
 
-        // 加载路由设置
-        require_once (APP . '/routes.php');
-        $router->notFound(function() {
-            echo "Ops! The page was not found!";
-        });
-
-        $router->methodNotAllowed(function() {
-            echo "Ops! Method not allowed!";
+        // 匹配 GET 请求. 处理器是个闭包 Closure
+        SRouter::get('/', function() {
+            echo 'hello';
         });
 
         //--------设置错误级别, 记录程序开始时间及内存--------//
@@ -71,7 +65,7 @@ class Framework {
         );
         Log::info($log);
 
-        $router->dispatch();
+        SRouter::dispatch();
     }
 
     public static function loadClass($className) {

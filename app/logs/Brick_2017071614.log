@@ -1,0 +1,11 @@
+2017-07-16 14:01:05|INFO|request_id=596b71a1b29db|uri=/favicon.ico|method=get|params=[]|stream=|cookie={"PHPSESSID":"40b69oqi9htrneil3g47g5n3u7","XDEBUG_SESSION":"19123"}|ip=127.0.0.1
+2017-07-16 14:01:09|INFO|request_id=596b71a1b29db|run_type=web|run_time=3,362ms|run_memory=0kb|response=|response_type=
+2017-07-16 14:04:37|INFO|request_id=596b7275ab13f|uri=/admin/login?XDEBUG_SESSION_START=13458|method=get|params={"XDEBUG_SESSION_START":"13458"}|stream=|cookie={"PHPSESSID":"40b69oqi9htrneil3g47g5n3u7","XDEBUG_SESSION":"19123"}|ip=127.0.0.1
+2017-07-16 14:05:35|INFO|request_id=596b7275ab13f|run_type=web|run_time=57,542ms|run_memory=0kb|response=|response_type=
+2017-07-16 14:05:35|INFO|request_id=596b72af693bd|uri=/favicon.ico|method=get|params=[]|stream=|cookie={"PHPSESSID":"40b69oqi9htrneil3g47g5n3u7","XDEBUG_SESSION":"13458"}|ip=127.0.0.1
+2017-07-16 14:05:37|INFO|request_id=596b72af693bd|run_type=web|run_time=2,252ms|run_memory=0kb|response=|response_type=
+2017-07-16 14:05:40|INFO|request_id=596b72b4d5b54|uri=/admin/login?XDEBUG_SESSION_START=13391|method=get|params={"XDEBUG_SESSION_START":"13391"}|stream=|cookie={"PHPSESSID":"40b69oqi9htrneil3g47g5n3u7","XDEBUG_SESSION":"13458"}|ip=127.0.0.1
+2017-07-16 14:06:12|INFO|request_id=596b72b4d5b54|run_type=web|run_time=31,906ms|run_memory=0kb|response=|response_type=
+2017-07-16 14:06:13|INFO|request_id=596b72d4efca8|uri=/favicon.ico|method=get|params=[]|stream=|cookie={"PHPSESSID":"40b69oqi9htrneil3g47g5n3u7","XDEBUG_SESSION":"13391"}|ip=127.0.0.1
+2017-07-16 14:06:14|INFO|request_id=596b72d4efca8|run_type=web|run_time=1,353ms|run_memory=0kb|response=|response_type=
+2017-07-16 14:06:17|INFO|request_id=596b72d931e8a|uri=/admin/login?XDEBUG_SESSION_START=10696|method=get|params={"XDEBUG_SESSION_START":"10696"}|stream=|cookie={"PHPSESSID":"40b69oqi9htrneil3g47g5n3u7","XDEBUG_SESSION":"13391"}|ip=127.0.0.1

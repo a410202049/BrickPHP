@@ -4,47 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe9ae8fd90aea20e3650bc7f4d7807d0",
+    "content-hash": "b5750d0f032c27581a2f94d07e072487",
     "packages": [
-        {
-            "name": "maer/router",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/magnus-eriksson/router.git",
-                "reference": "815a78f501e5a3c32d506683675a8bf377487470"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/magnus-eriksson/router/815a78f501e5a3c32d506683675a8bf377487470.zip",
-                "reference": "815a78f501e5a3c32d506683675a8bf377487470",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Maer\\Router\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Magnus Eriksson",
-                    "email": "mange@reloop.se"
-                }
-            ],
-            "description": "A small, simple, extendable one-file PHP router with groups, filters and named routes",
-            "time": "2017-04-06T13:04:08+00:00"
-        },
         {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.4.0",
@@ -174,9 +135,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "maer/router": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
