@@ -3,6 +3,7 @@
         "vendor-dir": "core/vendor"
     },
 	"require": {
-        "twig/twig": "~2.0"
+        "twig/twig": "~2.0",
+        "noahbuscher/macaw": "dev-master"
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 namespace Core;
-use Core\libraries\srouter\SRouter;
+use \NoahBuscher\Macaw\Macaw;
 class Framework {
     private static $_startTime = 0;
     private static $_memoryStart = 0;
@@ -12,12 +12,7 @@ class Framework {
         // 自动加载设置
         spl_autoload_register('self::loadClass');
         ini_set('date.timezone', Config::get('app.timezone'));
-
-        // 匹配 GET 请求. 处理器是个闭包 Closure
-        SRouter::get('/', function() {
-            echo 'hello';
-        });
-
+        require_once (APP . '/routes.php');
         //--------设置错误级别, 记录程序开始时间及内存--------//
         if (DEBUG) {
             ini_set('display_errors', 'On');
@@ -65,7 +60,7 @@ class Framework {
         );
         Log::info($log);
 
-        SRouter::dispatch();
+        Macaw::dispatch();
     }
 
     public static function loadClass($className) {
